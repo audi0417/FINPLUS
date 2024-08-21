@@ -41,15 +41,13 @@ pip install -r requirements.txt
 ## 使用方法
 首先，您需要導入 FinancialScraper 類別，並初始化一個實例，指定股票代號及開始和結束日期。接著，您可以使用 get_financial_statements 方法來抓取並獲取指定類型的財務報表。
 
-初始化
-python
-複製程式碼
+```python
 from financial_scraper.scraper import FinancialScraper
-
 scraper = FinancialScraper(stock_id="2330", start_date="2022-01-01", end_date="2023-01-01")
+```
+
 抓取財務報表
-python
-複製程式碼
+```python
 # 抓取並解析資產負債表
 balance_sheet = scraper.get_financial_statements(statement_type="資產負債表")
 
@@ -58,31 +56,22 @@ income_statement = scraper.get_financial_statements(statement_type="綜合損益
 
 # 抓取並解析現金流量表
 cash_flow_statement = scraper.get_financial_statements(statement_type="現金流量表")
-## 範例
-python
-複製程式碼
-from financial_scraper.scraper import FinancialScraper
+```
 
-# 初始化爬蟲
+## 範例
+```python
+from financial_scraper.scraper import FinancialScraper
 scraper = FinancialScraper(stock_id="2330", start_date="2022-01-01", end_date="2023-01-01")
 
 # 獲取指定時間範圍內的資產負債表
 balance_sheet = scraper.get_financial_statements(statement_type="資產負債表")
-
-# 顯示結果
 print(balance_sheet)
-例外處理
-本程式庫內部定義了一些自訂例外，如 InvalidTypeError，當傳入不支援的報表類型時，會引發此錯誤。
 
+## 例外處理
+本程式庫內部定義了一些自訂例外，如 InvalidTypeError，當傳入不支援的報表類型時，會引發此錯誤。
 InvalidTypeError
 當您傳入不支援的報表類型時，會引發 InvalidTypeError：
 
-python
-複製程式碼
-try:
-    invalid_data = scraper.get_financial_statements(statement_type="不支援的報表")
-except InvalidTypeError as e:
-    print(e)
 ## 貢獻
 如果您有任何建議或改進，歡迎提交 Pull Request，或在 Issue 中提出您的問題與建議。
 
