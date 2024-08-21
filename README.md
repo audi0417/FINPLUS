@@ -67,8 +67,7 @@ print(balance_sheet)
 ```
 ## 例外處理
 本程式庫內部定義了一些自訂例外，如 InvalidTypeError，當傳入不支援的報表類型時，會引發此錯誤。
-InvalidTypeError
-當您傳入不支援的報表類型時，會引發 InvalidTypeError：
+
 
 ## 貢獻
 如果您有任何建議或改進，歡迎提交 Pull Request，或在 Issue 中提出您的問題與建議。
