@@ -73,8 +73,8 @@ InvalidTypeError
 ## 貢獻
 如果您有任何建議或改進，歡迎提交 Pull Request，或在 Issue 中提出您的問題與建議。
 
-Fork 此專案
-創建您的分支 (git checkout -b feature/YourFeature)
-提交您的修改 (git commit -m 'Add some feature')
-推送至分支 (git push origin feature/YourFeature)
-打開一個 Pull Request
+1. Fork 此專案
+2. 創建您的分支 (git checkout -b feature/YourFeature)
+3. 提交您的修改 (git commit -m 'Add some feature')
+4. 推送至分支 (git push origin feature/YourFeature)
+5. 打開一個 Pull Request
