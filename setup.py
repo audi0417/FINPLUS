@@ -8,7 +8,7 @@ def read(fname):
     with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), fname), "r") as fin:
         return fin.read()
 setup(
-    name = "financial_scraper",
+    name = "FINPLUS",
     version = "0.0.1",
     author = "audi0417",
     author_email = "audiaudy3030422@gmail.com",
