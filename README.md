@@ -28,7 +28,7 @@ pip
 安裝步驟
 克隆此專案至您的本地環境：
 ```
-git clone https://github.com/your-username/financial-scraper.git
+git clone https://github.com/audi0417/financial-scraper.git
 ```
 進入專案目錄並安裝所需套件：
 ```
