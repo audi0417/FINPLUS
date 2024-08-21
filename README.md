@@ -27,16 +27,14 @@ Python 3.7+
 pip
 安裝步驟
 克隆此專案至您的本地環境：
-
-bash
-複製程式碼
+```
 git clone https://github.com/your-username/financial-scraper.git
+```
 進入專案目錄並安裝所需套件：
-
-bash
-複製程式碼
+```
 cd financial-scraper
 pip install -r requirements.txt
+```
 
 ## 使用方法
 首先，您需要導入 FinancialScraper 類別，並初始化一個實例，指定股票代號及開始和結束日期。接著，您可以使用 get_financial_statements 方法來抓取並獲取指定類型的財務報表。
@@ -46,7 +44,7 @@ from financial_scraper.scraper import FinancialScraper
 scraper = FinancialScraper(stock_id="2330", start_date="2022-01-01", end_date="2023-01-01")
 ```
 
-抓取財務報表
+**抓取財務報表**
 ```python
 # 抓取並解析資產負債表
 balance_sheet = scraper.get_financial_statements(statement_type="資產負債表")
@@ -66,7 +64,7 @@ scraper = FinancialScraper(stock_id="2330", start_date="2022-01-01", end_date="2
 # 獲取指定時間範圍內的資產負債表
 balance_sheet = scraper.get_financial_statements(statement_type="資產負債表")
 print(balance_sheet)
-
+```
 ## 例外處理
 本程式庫內部定義了一些自訂例外，如 InvalidTypeError，當傳入不支援的報表類型時，會引發此錯誤。
 InvalidTypeError
