@@ -39,7 +39,7 @@ pip install -r requirements.txt
 首先，您需要導入 FinancialScraper 類別，並初始化一個實例，指定股票代號及開始和結束日期。接著，您可以使用 get_financial_statements 方法來抓取並獲取指定類型的財務報表。
 
 ```python
-from FINPLUS.scraper import FinancialScraper
+from FINPLUS.crawler import FinancialScraper
 scraper = FinancialScraper(stock_id="2330", start_date="2022-01-01", end_date="2023-01-01")
 ```
 
