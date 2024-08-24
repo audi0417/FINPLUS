@@ -1,4 +1,4 @@
-# FINPLUS
+# Fineta
 
 目錄
 - [簡介](#簡介)
@@ -11,7 +11,7 @@
 
 
 ## 簡介
-FINPLUS 是一個 Python 程式庫，用於從台灣證券交易所（TWSE）網站抓取公司財務報表資料，並將其解析為 pandas DataFrame 格式。使用者可以指定股票代號及時間範圍，獲取不同季的資產負債表、綜合損益表和現金流量表。
+Fineta 是一個 Python 程式庫，用於從台灣證券交易所（TWSE）網站抓取公司財務報表資料，並將其解析為 pandas DataFrame 格式。使用者可以指定股票代號及時間範圍，獲取不同季的資產負債表、綜合損益表和現金流量表。
 
 ## 功能
 從 TWSE 網站抓取指定股票的財務數據
@@ -27,11 +27,11 @@ pip
 安裝步驟
 克隆此專案至您的本地環境：
 ```
-git clone https://github.com/audi0417/FINPLUS.git
+git clone https://github.com/audi0417/Fineta.git
 ```
 進入專案目錄並安裝所需套件：
 ```
-cd FINPLUS
+cd Fineta
 pip install -r requirements.txt
 ```
 
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 首先，您需要導入 FinancialScraper 類別，並初始化一個實例，指定股票代號及開始和結束日期。接著，您可以使用 get_financial_statements 方法來抓取並獲取指定類型的財務報表。
 
 ```python
-from FINPLUS.crawler import FinancialScraper
+from Fineta.crawler import FinancialScraper
 scraper = FinancialScraper(stock_id="2330", start_date="2022-01-01", end_date="2023-01-01")
 ```
 
