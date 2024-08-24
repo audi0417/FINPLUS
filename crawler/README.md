@@ -13,7 +13,7 @@ cash_flow_statement = scraper.get_financial_statements(statement_type="現金流
 
 ## 範例
 ```python
-from FINPLUS.crawler import FinancialScraper
+from Fineta.crawler import FinancialScraper
 scraper = FinancialScraper(stock_id="2330", start_date="2022-01-01", end_date="2023-01-01")
 
 # 獲取指定時間範圍內的資產負債表
